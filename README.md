@@ -63,14 +63,19 @@ A link collides with an obstacle circle if:
 ## 🧩 Project Structure
 
 rrt-obstacle-avoidance-2d-arm/
+
 │
+
 ├── arm_math.py # FK + IK for 2-link arm
+
 ├── obstacles.py # Circles / collision checks / world config
+
 ├── rrt_planner.py # Core RRT algorithm (workspace exploration)
-│
+
 ├── sim_rrt_ik_arm.py # RRT → IK → smooth motion (single goal)
+
 ├── sim_rrt_ik_arm_dynamic_re_goal.py # Auto re-goal & replan repeatedly
-│
+
 └── README.md
 
 ---
@@ -146,7 +151,11 @@ python sim_rrt_ik_arm_dynamic_re_goal.py
 After building this project, I now understand:
 
 ✔ Why IK alone is NOT enough
+
 ✔ Why manipulators need planning + IK
+
 ✔ How RRT discovers safe paths around obstacles
+
 ✔ How to convert workspace waypoints to joint motions
+
 ✔ How dynamic replanning handles moving targets / changing environments
